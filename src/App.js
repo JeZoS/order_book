@@ -46,7 +46,7 @@ const App = () => {
           flexDirection: "column",
           //justifyContent: "center",
           alignItems: "center",
-          height: "70vh",
+          height: "50vh",
         }}
       >
         <h1>Place Order</h1>
@@ -128,7 +128,7 @@ const App = () => {
           // justifyContent: "center",
           // alignItems: "center",
           width: "100%",
-          height: "100vh",
+          // height: "100vh",
         }}
       >
         <Tables />

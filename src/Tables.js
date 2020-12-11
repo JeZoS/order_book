@@ -13,7 +13,6 @@ const Tables = () => {
       className="Tbl"
       style={{
         display: "flex",
-        flexDirection: "row",
         justifyContent: "center",
         //alignItems: "center",
         width: "100%",
@@ -30,7 +29,9 @@ const Tables = () => {
           <thead>
             <tr>
               <th>Time</th>
+              <th>|</th>
               <th>Shares</th>
+              <th>|</th>
               <th>Bid</th>
             </tr>
           </thead>
@@ -39,13 +40,16 @@ const Tables = () => {
               bid.map((user) => (
                 <tr key={user.id}>
                   <td>{user.date}</td>
+                  <th>|</th>
                   <td>{user.shares}</td>
+                  <th>|</th>
                   <td>{user.price}</td>
                 </tr>
               ))}
           </tbody>
         </Table>
       </div>
+      <div className="line"></div>
       <div
         style={{
           display: "flex",
@@ -56,18 +60,22 @@ const Tables = () => {
         <Table striped hover bordered responsive className="table-sm">
           <thead>
             <tr>
-              <th>Ask</th>
-              <th>Shares</th>
-              <th>Time</th>
+              <th> Ask </th>
+              <th>|</th>
+              <th> Shares </th>
+              <th>|</th>
+              <th> Time </th>
             </tr>
           </thead>
           <tbody>
             {ask &&
               ask.map((user) => (
                 <tr key={user.id}>
-                  <td>{user.price}</td>
-                  <td>{user.shares}</td>
-                  <td>{user.date}</td>
+                  <td> {user.price}</td>
+                  <th>|</th>
+                  <td> {user.shares}</td>
+                  <th>|</th>
+                  <td> {user.date}</td>
                 </tr>
               ))}
           </tbody>

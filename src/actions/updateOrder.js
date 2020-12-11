@@ -7,7 +7,7 @@ export const updateBook = (order) => async (dispatch, getState) => {
       const time1 = new Date();
       var order1 = {
         id: Date.now(),
-        date: `${time1.getHours()}:${time1.getMinutes()}:${time1.getSeconds()}`,
+        date: `${time1.getHours()}:${time1.getMinutes()}:${time1.getSeconds()}:${time1.getMilliseconds()}`,
         shares: order.shares,
         price: order.forLimit,
       };
@@ -30,7 +30,7 @@ export const updateBook = (order) => async (dispatch, getState) => {
       const time = new Date();
       var order2 = {
         id: Date.now(),
-        date: `${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`,
+        date: `${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}:${time.getMilliseconds()}`,
         shares: order.shares,
         price: order.forLimit,
       };

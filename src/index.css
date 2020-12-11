@@ -30,12 +30,24 @@ code {
   display: flex;
   flex-direction: row;
 }
+.Tbl {
+  flex-direction: "row";
+}
+.line {
+  width: 2px;
+  background-color: black;
+}
 
 @media (max-width: 800px) {
   .main {
     flex-direction: column;
   }
+}
+@media (max-width: 600px) {
   .Tbl {
     flex-direction: column;
+  }
+  .line {
+    display: none;
   }
 }
