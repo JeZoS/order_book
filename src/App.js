@@ -31,20 +31,22 @@ const App = () => {
 
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-      }}
+      className="main"
+      style={
+        {
+          //display: "flex",
+          // flexDirection: "row",
+        }
+      }
     >
       <Col
         md={3}
         style={{
-          position: "fixed",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
+          //justifyContent: "center",
           alignItems: "center",
-          height: "100vh",
+          height: "70vh",
         }}
       >
         <h1>Place Order</h1>

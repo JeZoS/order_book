@@ -21,3 +21,21 @@ code {
   display: flex;
   flex-direction: column;
 }
+
+.table-sm {
+  margin: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+  .Tbl {
+    flex-direction: column;
+  }
+}
