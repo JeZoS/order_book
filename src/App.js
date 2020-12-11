@@ -65,9 +65,9 @@ const App = () => {
                   <option key={2} value="Limit">
                     LIMIT
                   </option>
-                  <option key={3} value="Stop">
+                  {/* <option key={3} value="Stop">
                     STOP
-                  </option>
+                  </option> */}
                 </Form.Control>
               </Col>
             </Row>
